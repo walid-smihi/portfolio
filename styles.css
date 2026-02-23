@@ -831,3 +831,8 @@ body[data-theme="dark"] .event-card::after {
     margin-bottom: 140px !important;
   }
 }
+
+/* Keep top bar above interactive timeline/card layers */
+.site-header {
+  z-index: 20000 !important;
+}
