@@ -43,6 +43,15 @@ if (menuToggle && mainNav) {
     const isOpen = mainNav.classList.toggle('open');
     menuToggle.setAttribute('aria-expanded', String(isOpen));
   });
+
+  mainNav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      if (mainNav.classList.contains('open')) {
+        mainNav.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
 }
 
 const steps = {
