@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Walid Smihi | Portfolio Développeur</title>
+  <meta name="description" content="Portfolio de Walid Smihi : projets, compétences et parcours vers une alternance en IA." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260222-1" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">Walid Smihi <span>Développeur</span></a>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" aria-label="Changer le thème" aria-pressed="false">
+        <img class="theme-icon" src="img/3313896.png" alt="" aria-hidden="true" />
+      </button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    </div>
+    <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+      <a href="#projets">Projets</a>
+      <a href="#competences">Compétences</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="section hero-section reveal">
+      <div class="container hero-layout">
+        <p class="eyebrow">Portfolio • Développeur logiciel</p>
+        <h1>Concevoir des solutions fiables, lisibles et vraiment utiles.</h1>
+        <p class="hero-copy">Je cherche une alternance pour septembre 2026 afin de préparer un Master Informatique spécialisé en Intelligence Artificielle, avec une approche terrain: comprendre vite, livrer proprement, améliorer en continu.</p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#projets">Voir mes projets</a>
+          <a class="btn btn-ghost" href="#parcours">Explorer mon parcours</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projets" class="section reveal">
+      <div class="container">
+        <div class="section-head">
+          <h2>Mes projets</h2>
+          <p>Des projets orientés résultat, utilisables et documentés.</p>
+        </div>
+        <div class="project-grid">
+          <a class="project-card" href="https://github.com/walid-smihi/Voxbridge" target="_blank" rel="noopener noreferrer">
+            <p class="tag">Projet 01</p>
+            <h3>VoxBridge</h3>
+            <p>VoxBridge est une application Python de transcription audio en direct (anglais) avec option de traduction vers le français, basée sur whisper.cpp.</p>
+            <span class="link-like">Voir sur GitHub</span>
+          </a>
+          <a class="project-card" href="https://github.com/walid-smihi/TurtleV4" target="_blank" rel="noopener noreferrer">
+            <p class="tag">Projet 02</p>
+            <h3>TurtleV4</h3>
+            <p>Interpréteur pour un langage permettant de déplacer une ou plusieurs tortues dans un jardin représenté par une grille.</p>
+            <span class="link-like">Voir sur GitHub</span>
+          </a>
+          <a class="project-card" href="https://github.com/walid-smihi/kanji-classification-challenge" target="_blank" rel="noopener noreferrer">
+            <p class="tag">Projet 03</p>
+            <h3>Kanji Classification Challenge</h3>
+            <p>Classification de kanjis (KNN, régression logistique, réseau de neurones MLP et CNN) avec visualisation t-SNE.</p>
+            <span class="link-like">Voir sur GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="competences" class="section reveal">
+      <div class="container">
+        <div class="section-head">
+          <h2>Mes compétences</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Langages</h3>
+            <ul class="chips">
+              <li>C++</li>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>Bash</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+              <li>R</li>
+              <li>OCaml</li>
+              <li>Prolog</li>
+              <li>ASM x86</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Outils / environnements</h3>
+            <ul class="chips">
+              <li>Docker</li>
+              <li>Git</li>
+              <li>Linux</li>
+              <li>Qt Project</li>
+              <li>PyCharm</li>
+              <li>VS Code</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Domaines maîtrisés</h3>
+            <ul class="chips">
+              <li>Développement logiciel</li>
+              <li>Programmation orientée objet</li>
+              <li>Bases de données</li>
+              <li>Automatisation</li>
+              <li>Algorithmique</li>
+              <li>Tests et fiabilité</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="parcours" class="section section-timeline reveal">
+  <div class="timeline-top container">
+    <h2>Parcours interactif</h2>
+    <p>Survolez mon histoire, dès le plus jeune âge et jusqu'à aujourd'hui grâce à cette frise interactive, qui permet d'expliquer mon parcours professionnel.</p>
+  </div>
+
+  <div class="timeline-stage" id="timelineStage" aria-label="Frise de parcours interactive">
+    <div class="timeline-bg-noise" aria-hidden="true"></div>
+    <div class="timeline-rail" aria-hidden="true"></div>
+    <div class="timeline-progress" id="timelineProgress" aria-hidden="true"></div>
+    <div class="timeline-cursor" id="timelineCursor" aria-hidden="true"></div>
+
+    <button class="event-node" data-step="step1" data-x="8" style="left:8%; top:49%;" type="button"><span>Débuts</span></button>
+    <button class="event-node" data-step="step2" data-x="20" style="left:20%; top:54%;" type="button"><span>Scolarité</span></button>
+    <button class="event-node" data-step="step3" data-x="34" style="left:34%; top:47%;" type="button"><span>Déclic</span></button>
+    <button class="event-node" data-step="step4" data-x="48" style="left:48%; top:53%;" type="button"><span>Spécialisation</span></button>
+    <button class="event-node" data-step="step5" data-x="61" style="left:61%; top:46%;" type="button"><span>Stage</span></button>
+    <button class="event-node" data-step="step6" data-x="73" style="left:73%; top:55%;" type="button"><span>Australie</span></button>
+    <button class="event-node" data-step="step7" data-x="85" style="left:85%; top:48%;" type="button"><span>Retour</span></button>
+    <button class="event-node active" data-step="step8" data-x="94" style="left:94%; top:52%;" type="button"><span>Objectif</span></button>
+
+    <article id="eventCard" class="event-card event-card-visible" aria-live="polite">
+      <h3 id="eventTitle">Objectif</h3>
+      <div class="event-preview-wrap">
+        <p id="eventPreview" class="event-preview">Aujourd’hui, je suis en 3ᵉ année de Licence Informatique, et je sais à quel point il est important d’avoir un profil réellement livrable sur le marché du travail...</p>
+        <div class="event-preview-fade" aria-hidden="true"></div>
+      </div>
+      <pre id="eventCode" class="event-code"><code></code></pre>
+    </article>
+  </div>
+</section>
+
+    <section id="contact" class="section reveal">
+      <div class="container contact-box">
+        <h2>Contact</h2>
+        <ul>
+          <li>Email: <a href="mailto:smihipro@gmail.com">smihipro@gmail.com</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/walid-smihi/" target="_blank" rel="noopener noreferrer">linkedin.com/in/walid-smihi</a></li>
+          <li>GitHub: <a href="https://github.com/walid-smihi" target="_blank" rel="noopener noreferrer">github.com/walid-smihi</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Walid Smihi</p>
+  </footer>
+
+  <script src="script.js?v=20260222-1"></script>
+</body>
+</html>
+
